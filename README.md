@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Doctor listing
+
+Next.js 14 + React + Tailwind. Doctors load from `public/doctors.json`.
+
+## Deploying on Vercel
+
+Vercel builds from the **folder that contains** `package.json` and `app/` next to each other.
+
+- If this repo’s root **is** this project (you see `app/`, `package.json`, `public/` at the top of the repo on GitHub), import the repo and deploy — you should **not** see the default Next.js welcome page if `app/page.tsx` is pushed.
+- If your GitHub repo has an **extra parent folder** (e.g. `Assinment/doctor-listing-app/...` at the top), set **Vercel → your project → Settings → General → Root Directory** to `doctor-listing-app`, then trigger a **Redeploy**. Otherwise Vercel may build an empty or wrong folder and you get the starter page.
+- Confirm the **branch** you deploy (usually `main`) includes your latest commit with the doctor UI.
+
+### If you see `404: NOT_FOUND` (Vercel’s grey error box)
+
+That response is from **Vercel’s edge**, not your Next.js `not-found` page. It usually means **no working deployment is attached** to that URL.
+
+1. **Vercel → your project → Deployments** — open the **latest** deployment. It must be **Ready** (green). If it’s **Error**, open **Build Logs** and fix what failed (wrong root directory is the most common fix).
+2. **Settings → General → Root Directory** — must be empty **or** set to the folder that directly contains `package.json` + `app/` (see above). Save, then **Redeploy**.
+3. **Settings → General → Build & Development Settings** — for a normal Next app, **do not** set a custom **Output Directory** unless you know you need it; leave it default so Vercel can use the Next.js output.
+4. Open the site using **Visit** on a **successful** deployment from the Deployments list (that URL always matches a real build). If that works but `*.vercel.app` does not, promote that deployment to **Production** or redeploy to production.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Browse doctors with name, specialization, experience, rating, and fee
+- Search by name (short debounce)
+- Filter by specialization (pills)
+- Load more
+- Loading skeleton while JSON loads
+- Inline error + retry if the file fails
+- Empty state when filters match nothing
+- Fully responsive (mobile + desktop)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Stack
 
-## Learn More
+- Next.js 14 (App Router)
+- React 18
+- Tailwind CSS
+- TypeScript
 
-To learn more about Next.js, take a look at the following resources:
+## Project layout
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`app/` and `components/` for UI, `types/` for the `Doctor` shape, `hooks/` and `lib/` for fetching and filtering logic.

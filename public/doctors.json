@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Ananya Mehta",
+    "specialization": "Cardiologist",
+    "fee": 1200,
+    "experience": 14,
+    "rating": 4.8,
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "Dr. Rohan Kapoor",
+    "specialization": "Cardiologist",
+    "fee": 950,
+    "experience": 9,
+    "rating": 4.5,
+    "available": false
+  },
+  {
+    "id": 3,
+    "name": "Dr. Priya Nair",
+    "specialization": "Cardiologist",
+    "fee": 1500,
+    "experience": 18,
+    "rating": 4.9,
+    "available": true
+  },
+  {
+    "id": 4,
+    "name": "Dr. Vikram Desai",
+    "specialization": "Dermatologist",
+    "fee": 800,
+    "experience": 11,
+    "rating": 4.6,
+    "available": true
+  },
+  {
+    "id": 5,
+    "name": "Dr. Sneha Kulkarni",
+    "specialization": "Dermatologist",
+    "fee": 750,
+    "experience": 7,
+    "rating": 4.3,
+    "available": true
+  },
+  {
+    "id": 6,
+    "name": "Dr. Arjun Pillai",
+    "specialization": "Dermatologist",
+    "fee": 1100,
+    "experience": 15,
+    "rating": 4.7,
+    "available": false
+  },
+  {
+    "id": 7,
+    "name": "Dr. Meera Iyer",
+    "specialization": "Neurologist",
+    "fee": 1300,
+    "experience": 16,
+    "rating": 4.8,
+    "available": true
+  },
+  {
+    "id": 8,
+    "name": "Dr. Karan Bose",
+    "specialization": "Neurologist",
+    "fee": 1000,
+    "experience": 10,
+    "rating": 4.4,
+    "available": true
+  },
+  {
+    "id": 9,
+    "name": "Dr. Ritu Sharma",
+    "specialization": "Neurologist",
+    "fee": 1400,
+    "experience": 20,
+    "rating": 4.9,
+    "available": false
+  },
+  {
+    "id": 10,
+    "name": "Dr. Aditya Verma",
+    "specialization": "Pediatrician",
+    "fee": 600,
+    "experience": 8,
+    "rating": 4.6,
+    "available": true
+  },
+  {
+    "id": 11,
+    "name": "Dr. Kavita Menon",
+    "specialization": "Pediatrician",
+    "fee": 700,
+    "experience": 12,
+    "rating": 4.7,
+    "available": true
+  },
+  {
+    "id": 12,
+    "name": "Dr. Neha Agarwal",
+    "specialization": "Orthopedic",
+    "fee": 1250,
+    "experience": 13,
+    "rating": 4.5,
+    "available": true
+  },
+  {
+    "id": 13,
+    "name": "Dr. Manish Khanna",
+    "specialization": "Orthopedic",
+    "fee": 1600,
+    "experience": 19,
+    "rating": 4.8,
+    "available": false
+  },
+  {
+    "id": 14,
+    "name": "Dr. Harish Malhotra",
+    "specialization": "ENT Specialist",
+    "fee": 850,
+    "experience": 11,
+    "rating": 4.5,
+    "available": true
+  },
+  {
+    "id": 15,
+    "name": "Dr. Divya Thomas",
+    "specialization": "ENT Specialist",
+    "fee": 780,
+    "experience": 9,
+    "rating": 4.4,
+    "available": true
+  },
+  {
+    "id": 16,
+    "name": "Dr. Sanjay Ghosh",
+    "specialization": "ENT Specialist",
+    "fee": 920,
+    "experience": 12,
+    "rating": 4.6,
+    "available": true
+  },
+  {
+    "id": 17,
+    "name": "Dr. Sameer Joshi",
+    "specialization": "Psychiatrist",
+    "fee": 1100,
+    "experience": 14,
+    "rating": 4.7,
+    "available": false
+  },
+  {
+    "id": 18,
+    "name": "Dr. Lakshmi Reddy",
+    "specialization": "Psychiatrist",
+    "fee": 950,
+    "experience": 10,
+    "rating": 4.6,
+    "available": true
+  },
+  {
+    "id": 19,
+    "name": "Dr. Amit Patil",
+    "specialization": "General Physician",
+    "fee": 500,
+    "experience": 17,
+    "rating": 4.8,
+    "available": true
+  },
+  {
+    "id": 20,
+    "name": "Dr. Sunita Das",
+    "specialization": "General Physician",
+    "fee": 450,
+    "experience": 11,
+    "rating": 4.5,
+    "available": true
+  }
+]
